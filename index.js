@@ -5,7 +5,7 @@ const dotenv = require('dotenv');
 const https = require('https');
 
 // Load environment variables
-dotenv.config({ path: '/home/container/bot2/.env' }); //change to your device/host path
+dotenv.config({ path: 'require('dotenv').config();' }); //change to your device/host path
 
 // Validate environment variables
 if (!process.env.SHAPESINC_API_KEY) {
