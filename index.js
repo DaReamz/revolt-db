@@ -383,6 +383,19 @@ async function startBot() {
   }
 }
 
+const express = require('express');
+const app = express();
+
+// Use the PORT environment variable provided by Render
+const port = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+  res.send('Bot is running!');
+});
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
 // Start the bot
 console.log('Starting bot...');
 startBot();
